@@ -1,0 +1,19 @@
+.container-Search{
+    background-color: transparent;
+    flex: 1;
+    text-align: right;
+    margin-right: 3rem;
+}
+
+.input-Search{
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0 1rem ;
+    display: inline-block;
+    text-align:start;
+}
+
+p{
+    text-align: center;
+    color: rgb(77, 77, 77);
+}

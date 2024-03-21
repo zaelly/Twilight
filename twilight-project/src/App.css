@@ -1,0 +1,26 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: rgb(23, 23, 23);
+
+}
+body{
+  background-color: rgb(6, 6, 6);
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title-pagName{ 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  color: #fff;
+  position: fixed;
+  top: 8rem;
+  font-size: 2rem;
+  font-family: "Lalezar", system-ui;    
+
+}
