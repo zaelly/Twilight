@@ -1,26 +1,33 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
+  font-family: "Anta", sans-serif;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+p,h3,
+h2,h1,
+a,li{    
+  font-family:Arial, Helvetica, sans-serif;
+  color: #000000; 
+  background-color: transparent;
+}
+
+a{
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  font-style: normal;
+  display: flex;
+  margin: 0 1rem;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Lalezar", system-ui;    
+  font-size: .90rem;
 }
-a:hover {
-  color: #535bf2;
+
+a:hover{
+  color:rgb(9, 69, 0)
 }
+
 
 body {
   margin: 0;
@@ -65,4 +72,29 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.underline {
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.underline::after {
+  color: #fff;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; 
+  width: 100%;
+  height: 2px; 
+  background-color:rgb(34, 255, 0); 
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.underline:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
 }

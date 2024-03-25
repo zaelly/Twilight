@@ -8,7 +8,7 @@
 .options-container{
     position: fixed;
     right: 18rem;
-    top: 1.8rem;
+    top: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,7 +21,7 @@ select{
     background: none;
     outline: none;
     font-family: "Lalezar", system-ui;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .custom-select{
