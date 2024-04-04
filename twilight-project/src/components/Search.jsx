@@ -1,10 +1,23 @@
 import './Search.css'
+import { useState } from 'react';
 
 const Search = () => {
+
+  const [inputBtn, setInputBtn] = useState('');
+
+  const  handleSubmit = (e) => {
+    e.target.value = setInputBtn;
+    console.log(inputBtn);
+  }
+
   return (
     <div className='container-Search'>
       <input className='input-Search' type="text" name='search' placeholder='Pesquisar...' />
-      <span className='icon-span icon-search'><i className="fa-solid fa-magnifying-glass"></i></span>
+      <button type="submit" className='btn-search' onClick={handleSubmit}>
+        <span className='icon-span icon-search'>
+          <i className="fa-solid fa-magnifying-glass"></i>
+        </span>
+      </button>
     </div>
   )
 }
