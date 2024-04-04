@@ -5,10 +5,15 @@
     margin-right: 3rem;
 }
 
+.icon-search{
+    margin:  auto 0.5rem;
+    font-size: 20px;
+}
+
 .input-Search{
     text-align: center;
     border-radius: 1rem;
-    padding: 0 1rem ;
+    padding: .35rem 2.5rem ;
     display: inline-block;
     text-align:start;
 }

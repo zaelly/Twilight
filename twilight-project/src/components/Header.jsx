@@ -1,11 +1,7 @@
-import React from 'react';
-// import { BrowserRouter as Router, Route, Switch, a } from 'react-router-dom';
-// import Home from '/src/pages/Home';
-// import Movies from '/src/pages/Movies';
-// import Serie from '/src/pages/Serie';
 import './Header.css';
-import OptionsComponent from '../components/OptionsComponent';
+import { Link } from 'react-router-dom'
 import Search from './Search';
+
 
 const Header = () => {
   return (
@@ -13,15 +9,31 @@ const Header = () => {
       <div className='container-header'>
         <div className='logo'>
           <img className='logo-img' src="src/assets/invader-solid.png" alt="Logo-Invader" />
-          <h1 className='logo-color-change'>OnmatioN</h1>
+          <Link className='logo-color-change logo-title' to="/">OnmatioN</Link>
         </div>
 
         <nav>
-          <a className="underline">Home</a>
-          <a className="underline">Filmes</a>
-          <a className="underline">Séries</a>
+          <ul>
+            <li>
+              <Link to="/movies" className="underline">
+                <span className='icon-span'><i className="fa-solid fa-film"></i></span>
+                Filmes
+              </Link>
+            </li>
+            <li>
+              <Link to="/serie" className="underline">
+                <span className='icon-span'><i className="fa-solid fa-video"></i></span>
+                Séries
+              </Link>
+            </li>
+            <li>
+              <Link to="/animes" className="underline">
+                <span className='icon-span'><i className="fa-solid fa-ghost"></i></span>
+                Animes
+              </Link>
+            </li>
+          </ul>
         </nav>
-        <OptionsComponent />
         <Search />
       </div>
     </>

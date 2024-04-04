@@ -1,6 +1,4 @@
-import React from 'react'
 import './Home.css'
-import OptionsComponent from '../components/OptionsComponent'
 
 const Home = () => {
   return (

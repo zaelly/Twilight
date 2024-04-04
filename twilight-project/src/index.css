@@ -12,6 +12,22 @@ a,li{
   background-color: transparent;
 }
 
+.icons{
+  color:aqua;
+}
+
+ul{
+  text-decoration: none;
+  display: flex;
+  background: transparent;
+}
+
+.icon-span{
+  color: rgb(0, 255, 13);
+  background: transparent;
+  padding-right: 5px;
+}
+
 a{
   font-weight: 500;
   font-style: normal;
@@ -21,7 +37,8 @@ a{
   text-decoration: none;
   list-style: none;
   font-family: "Lalezar", system-ui;    
-  font-size: .90rem;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 a:hover{
@@ -52,13 +69,6 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
