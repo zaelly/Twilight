@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: space-between;
     border: none;
-    border-bottom: 1px solid #616161;
+    border-bottom: 1px solid rgb(13, 100, 0);
 }
 
 .logo-title,
@@ -29,10 +29,9 @@ nav h1{
 }
 
 nav{
-    flex: 1;
     display: flex;
     justify-content: center;
-    margin: 0rem;
+    margin-left: 15rem;
     padding: 0 1rem;
     color: #fff;
     background: transparent;

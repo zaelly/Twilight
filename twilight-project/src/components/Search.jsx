@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 const Search = () => {
 
+  //colocar api para buscar o que o user procura
   const [inputBtn, setInputBtn] = useState('');
 
   const handleEnter = (e)=>{

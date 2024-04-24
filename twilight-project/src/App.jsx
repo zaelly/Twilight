@@ -4,7 +4,9 @@ import Home from '/src/pages/Home';
 import Movies from '/src/pages/Movies';
 import Serie from '/src/pages/Serie';
 import Animes from './pages/Animes';
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route } from 'react-router-dom'
+import GendersViews from './components/GendersViews';
+
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
         <Route path="/serie" element={<Serie/>} />
         <Route path="/animes" element={<Animes/>} />
       </Routes>
+      <GendersViews/>
       </div>
   )
 }

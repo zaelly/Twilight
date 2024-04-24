@@ -1,0 +1,65 @@
+/* estilizar os options */
+
+/* fazer com que o conteudo possa descer mas os options nao
+eles tem q ficar estaticos no lugar */
+.lis-container{
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(13, 100, 0);
+    align-items: stretch;
+    height: 100%;
+    position:fixed;
+    overflow-x: hidden;
+    z-index: -2;
+}
+
+.list-genders{
+    display: flex;
+    flex-direction: row;
+    margin-top:4rem;
+    background:none;
+    flex-wrap: wrap;
+    padding:1.8rem;
+    height: 100vh;
+}
+
+.list-genders ul{
+    text-decoration: none;
+    flex-direction: column;
+    list-style: none;
+}
+
+.list-genders ul a{
+    text-align:left;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: .8rem;
+    text-align:left;
+    color: #fff;
+    font-weight: 400;
+}
+
+.list-genders ul p{
+    margin-bottom: .8rem;
+    text-align:left;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* largura da barra de rolagem */
+    border-radius: 13px;
+}
+::-webkit-scrollbar-track {
+    background: #a1ffa1;
+    border-radius: 13px;
+}
+::-webkit-scrollbar-thumb {
+    background: #034e00;
+    border-radius: 13px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #84f884;
+}
