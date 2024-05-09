@@ -15,19 +15,19 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/movies" className="underline">
+              <Link to="/movies/1" className="underline">
                 <span className='icon-span'><i className="fa-solid fa-film"></i></span>
                 Filmes
               </Link>
             </li>
             <li>
-              <Link to="/serie" className="underline">
+              <Link to="/serie/1" className="underline">
                 <span className='icon-span'><i className="fa-solid fa-video"></i></span>
                 Séries
               </Link>
             </li>
             <li>
-              <Link to="/animes" className="underline">
+              <Link to="/animes/1" className="underline">
                 <span className='icon-span'><i className="fa-solid fa-ghost"></i></span>
                 Animes
               </Link>

@@ -3,6 +3,7 @@
 /* fazer com que o conteudo possa descer mas os options nao
 eles tem q ficar estaticos no lugar */
 .lis-container{
+    top: 2.5rem;
     display: flex;
     flex-direction: column;
     background-color:  rgb(13, 100, 0);
@@ -10,17 +11,17 @@ eles tem q ficar estaticos no lugar */
     height: 100%;
     position:fixed;
     overflow-x: hidden;
-    z-index: -2;
+    z-index: -1;
 }
+
+/* quando a tela diminuir é para o scroll pegar todas as opções */
 
 .list-genders{
     display: flex;
     flex-direction: row;
-    margin-top:4rem;
     background:none;
     flex-wrap: wrap;
-    padding:1.8rem;
-    height: 100vh;
+    padding:3rem 1.8rem;
 }
 
 .list-genders ul{
@@ -34,6 +35,7 @@ eles tem q ficar estaticos no lugar */
     font-size: 1.1rem;
     margin: 0;
     padding: 0;
+    /* muda a distancia dos "a", para telas menores colocar .4rem */
     margin-bottom: .8rem;
     text-align:left;
     color: #fff;

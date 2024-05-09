@@ -21,14 +21,14 @@ const Search = () => {
   }
 
   return (
-    <div className='container-Search'>
+    <form className='container-Search'>
       <input className='input-Search' type="text" name='search' placeholder='Pesquisar...' onChange={handleChange} onKeyDown={handleEnter}/>
       <button type="submit" className='btn-search' onClick={handleSubmit}>
         <span className='icon-span icon-search'>
           <i className="fa-solid fa-magnifying-glass"></i>
         </span>
       </button>
-    </div>
+    </form>
   )
 }
 
