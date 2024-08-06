@@ -31,3 +31,13 @@ p{
     outline: none;
     box-shadow:none !important;
 }
+@media only screen and (max-width: 800px) {
+    .input-Search{
+        padding: .35rem .5rem ;
+        margin-top: 1rem;
+        margin-bottom: .8rem;
+    }
+    .icon-search{
+        display: none;
+    }
+}

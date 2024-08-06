@@ -10,7 +10,9 @@ body {
   place-items: center;
   width: 100% !important;
 }
-
+.white-input{
+  color: #fff;
+}
 p,h3,
 h2,h1,
 a,li{    
@@ -70,18 +72,6 @@ button {
   transition: border-color 0.25s;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
 
 .underline {
   color: #fff;

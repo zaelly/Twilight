@@ -5,6 +5,24 @@
   background-color: rgb(0, 0, 0);
 }
 
+.fontWhite{
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Lalezar", system-ui;    
+}
+
+.conteudo{ 
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, 100%);
+  background: transparent;
+  color: #fff;
+  position: fixed;
+  top: 8rem;
+  font-size: 2rem;
+  font-family: "Lalezar", system-ui;    
+}
+
 .title-pagName{ 
   top: 50%;
   left: 55%;
@@ -15,6 +33,12 @@
   top: 8rem;
   font-size: 2rem;
   font-family: "Lalezar", system-ui;    
+}
+
+@media only screen and (max-width: 800px) {
+  .title-pagName{
+    left: 64%;
+  }
 }
 
 :root{

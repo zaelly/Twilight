@@ -53,6 +53,26 @@ nav{
     filter: invert(100%);
 }
 
+@media only screen and (max-width: 800px) {
+    .logo-img{
+        width: 1.7rem;
+    }
+    .nav{
+        margin-left: 15rem;
+        padding: 0 1rem;
+    }
+    .logo-title,
+    nav h1{
+        font-size: 1.5rem;
+    }
+    .container-header{
+        padding: 0rem 0;
+    }
+    nav{
+        margin-left: 12rem;
+    }
+}
+
 .logo{
     padding: 0;
     display: flex;

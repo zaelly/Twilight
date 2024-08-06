@@ -1,15 +1,15 @@
 // futuramente colocar uma area de login para salvar coisas q as pessoas querem assistir ou já assistiram
-import { useState } from 'react';
+// import { useState } from 'react';
 
 import './GendersViews.css';
 
-export const GendersViews = () => {
+const GendersViews = () => {
 
-  const [role, setRole] = useState("");
+  // const [role, setRole] = useState("");
 
-  function handleRole(e){
-    setRole(e.target.value)
-  }
+  // function handleRole(e){
+  //   setRole(e.target.value)
+  // }
   
   return (
     <div id='lis' className='lis-container'> 
@@ -35,7 +35,7 @@ export const GendersViews = () => {
                 <a href="">LGBTQIAP+</a>
             </ul>
         </div>  
-        <label>
+        {/* <label>
           <span>Genêros</span>
           <select name="role" id="genders" onChange={handleRole()} value={role}>
             <option value="1">Animação</option>
@@ -56,7 +56,7 @@ export const GendersViews = () => {
             <option value="16">Aventura</option>
             <option value="17">LGBTQIAP</option>
           </select>
-        </label>
+        </label> */}
      </div>      
   )
 }

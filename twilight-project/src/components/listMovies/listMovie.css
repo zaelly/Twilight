@@ -1,0 +1,20 @@
+.movie-list{
+    background-color: rgb(0, 120, 224);
+    color: aliceblue;
+}
+
+.conteudo{ 
+    left: 55%;
+    transform: translate(-50%, 100%);
+    background: transparent;
+    color: #fff;
+    position: fixed;
+    top: 8rem;
+    font-size: 2rem;
+    font-family: "Lalezar", system-ui;    
+    z-index: 5;
+}
+
+.card-title{
+color:#fff
+}

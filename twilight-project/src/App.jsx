@@ -1,11 +1,11 @@
-import Header from '../src/components/Header'
+import Header from './components/header/Header'
 import './App.css'
-import Home from '/src/pages/Home';
-import Movies from '/src/pages/Movies';
-import Serie from '/src/pages/Serie';
-import Animes from './pages/Animes';
+import Home from '/src/pages/home/Home';
+import Movies from '/src/pages/films/Movies';
+import Serie from '/src/pages/series/Serie';
+import Animes from './pages/anime/Animes';
 import {Routes, Route } from 'react-router-dom'
-import GendersViews from './components/GendersViews';
+import GendersViews from './components/gendersViews/GendersViews';
 
 
 function App() {
