@@ -1,0 +1,11 @@
+.title-pagName{ 
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    color: #fff;
+    position: fixed;
+    top: 8rem;
+    font-size: 2rem;
+    font-family: "Lalezar", system-ui;    
+  }

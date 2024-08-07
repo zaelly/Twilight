@@ -8,7 +8,6 @@ const Header = () => {
     <>
       <div className='container-header'>
         <div className='logo'>
-          <img className='logo-img' src="src/assets/invader-solid.png" alt="Logo-Invader" />
           <Link className='logo-color-change logo-title' to="/">OnmatioN</Link>
         </div>
 

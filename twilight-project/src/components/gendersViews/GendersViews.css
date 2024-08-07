@@ -11,7 +11,6 @@ eles tem q ficar estaticos no lugar */
     height: 100%;
     position:fixed;
     overflow-x: hidden;
-    z-index: -1;
 }
 
 /* quando a tela diminuir é para o scroll pegar todas as opções */

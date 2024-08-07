@@ -1,11 +1,14 @@
-import ListMovie from '/src/components/listMovies/ListMovie.jsx'
+import ListMovie from "../../components/listMovies/ListMovie"
+import './index.css'
 
 const Movies = () => {
 
   return (
-    <div>
-      <h1 className='title-pagName'>Assistir Filmes Online</h1>
-      <ListMovie/>
+    <div className="main-container">
+         <h1 className='title-pagName title'>Assistir Filmes Online</h1>
+      <div className="mainContainer">
+        <ListMovie/>
+      </div>
     </div>
   )
 }

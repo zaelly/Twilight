@@ -41,7 +41,26 @@
   }
 }
 
+.container-footer {
+  color: #fff;
+  display: flex;
+  border: none;
+  border-top:1px solid rgb(13, 100, 0);
+  width: 100%;
+  font-size: 2rem;
+  font-family: "Lalezar", system-ui; 
+  height: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-ft{
+  background-color: transparent;
+  color: #ffffff;
+}
+
 :root{
+  overflow-x: hidden;
   display: flex;
   flex-wrap: wrap;
   width: 100%;

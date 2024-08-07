@@ -6,6 +6,7 @@ import Serie from '/src/pages/series/Serie';
 import Animes from './pages/anime/Animes';
 import {Routes, Route } from 'react-router-dom'
 import GendersViews from './components/gendersViews/GendersViews';
+import Footer from '/src/pages/footer/Footer'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/animes/:id" element={<Animes/>} />
       </Routes>
       <GendersViews/>
+      <Footer/>
       </div>
   )
 }

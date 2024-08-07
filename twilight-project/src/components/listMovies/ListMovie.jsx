@@ -19,15 +19,22 @@ const ListMovie = () => {
       }
     }).then(response => {
       setMovies(response.data.results);
-    })
+      console.log(response.data.results);
+    }).catch(error => {
+      console.error("Erro ao achar filmes ", error);
+    });
   }
 
   return (
-    <div className="conteudo">
-        <ul className="movie-list">
-            {movies.map((movie)=>{
-                <li className="card-title">{movie.title}</li>
-            })}
+    <div className="flex-container">
+      <ul className="movie-list">
+        {movies.map((movie) => (
+          <li key={movie.id} className="flex-item">
+            <img className="card-poster" src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt=""></img>
+            <p className="card-title">{movie.title}</p>
+            <p className="description">{movie.overview}</p>
+          </li>
+        ))}
         </ul>
     </div>
   )
