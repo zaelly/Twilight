@@ -1,0 +1,44 @@
+.mainContainer{
+    margin: auto;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.container-controller {
+    border: 1px solid #fff;
+    width: 50%;
+    left: 55%;
+    flex-direction: column;
+    height: 30%;
+    position: relative;
+    bottom: 18rem;
+}
+
+.titlePag{
+    left: 55%;
+    background: transparent;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    border-bottom: #fff solid 1px;
+    font-size: 2rem;
+    font-family: "Lalezar", system-ui;    
+}
+
+.video{
+top:6rem;
+position: relative;
+left: 55%;
+background-color: aliceblue;
+}
+
+.textView{
+left: 55%;
+background: transparent;
+color: #fff;
+position: relative;
+font-family: "Lalezar", system-ui;    
+}

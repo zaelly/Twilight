@@ -1,7 +1,4 @@
-/* estilizar os options */
 
-/* fazer com que o conteudo possa descer mas os options nao
-eles tem q ficar estaticos no lugar */
 .lis-container{
     top: 2.5rem;
     display: flex;
@@ -12,8 +9,6 @@ eles tem q ficar estaticos no lugar */
     position:fixed;
     overflow-x: hidden;
 }
-
-/* quando a tela diminuir é para o scroll pegar todas as opções */
 
 .list-genders{
     display: flex;
@@ -34,7 +29,6 @@ eles tem q ficar estaticos no lugar */
     font-size: 1.1rem;
     margin: 0;
     padding: 0;
-    /* muda a distancia dos "a", para telas menores colocar .4rem */
     margin-bottom: .8rem;
     text-align:left;
     color: #fff;
@@ -50,7 +44,7 @@ eles tem q ficar estaticos no lugar */
 }
 
 ::-webkit-scrollbar {
-    width: 10px; /* largura da barra de rolagem */
+    width: 10px;
     border-radius: 13px;
 }
 ::-webkit-scrollbar-track {

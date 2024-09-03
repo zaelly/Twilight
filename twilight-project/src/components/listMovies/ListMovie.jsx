@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './listMovie.css'
 
@@ -19,24 +20,26 @@ const ListMovie = () => {
       }
     }).then(response => {
       setMovies(response.data.results);
-      console.log(response.data.results);
     }).catch(error => {
       console.error("Erro ao achar filmes ", error);
     });
   }
-
   return (
     <div className="flex-container">
-      <ul className="movie-list">
-        {movies.map((movie) => (
-          <li key={movie.id} className="flex-item">
-            <img className="card-poster" src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt=""></img>
+    <ul className="list">
+      {movies.map((movie) => (
+        <li key={movie.id} className="flex-item">
+          <Link to={`/onmation/assistirOnline/${movie.id}`}>
+            <img className="card-poster" src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.title} />
+          </Link>
+          <Link to={`/onmation/assistirOnline/${movie.id}`}>
             <p className="card-title">{movie.title}</p>
-            <p className="description">{movie.overview}</p>
-          </li>
-        ))}
-        </ul>
-    </div>
+          </Link>          
+          <p className="description">{movie.overview}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
   )
 }
 

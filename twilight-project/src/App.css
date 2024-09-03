@@ -68,3 +68,57 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
 }
+
+.flex-item{
+  margin: 1rem;
+  gap: 1rem .5em;
+  width: 15rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: rgba(30, 255, 0, 0.158);
+}
+
+.flex-item:hover, .card-poster:hover{
+  background-color: rgba(30, 255, 0, 0.438);
+}
+
+.card-poster{
+  width:100%;
+  padding: .5rem;
+  height: auto;
+}
+
+.card-title{
+  font-size: 1rem;
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.description{
+  color: #fff;
+  font-size: .8rem;
+  text-align: left;
+  padding: 1rem;
+  height:auto;
+}
+
+.list{
+  background-color: transparent;
+  color: aliceblue;
+  flex-flow: row wrap;
+  display: flex;
+  align-content: center;
+  margin-top:2rem
+}
+
+.title-pagName{ 
+  left: 55%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  color: #fff;
+  position: fixed;
+  border-bottom: #fff solid 1px;
+  top: 8rem;
+  font-size: 2rem;
+  font-family: "Lalezar", system-ui;    
+}

@@ -5,6 +5,7 @@
 }
 
 body {
+  z-index: -1;
   margin: 0;
   display: flex;
   place-items: center;
@@ -95,4 +96,9 @@ button {
 .underline:hover::after {
   visibility: visible;
   transform: scaleX(1);
+}
+
+html{
+  width: 100vh;
+  height: 100vh;
 }

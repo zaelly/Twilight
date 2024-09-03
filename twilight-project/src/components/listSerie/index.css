@@ -1,5 +1,5 @@
 
-.flex-container{ 
+.container-sr{ 
     margin-left: 12%;
     margin-top: 8rem;
     width: 87%;
@@ -18,3 +18,4 @@ li{
     display: flex;
     font-size: 1rem;
 }
+
