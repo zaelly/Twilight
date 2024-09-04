@@ -5,14 +5,13 @@
     flex-direction: column;
 }
 
-.title-pagName{ 
-    left: 55%;
-    transform: translate(-50%, -50%);
-    background: transparent;
-    color: #fff;
-    position: fixed;
-    border-bottom: #fff solid 1px;
-    top: 8rem;
-    font-size: 2rem;
-    font-family: "Lalezar", system-ui;    
+.card-poster{
+    width:100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.card-poster:hover{
+    background-color: rgba(17, 17, 17, 0.438);
   }
+  

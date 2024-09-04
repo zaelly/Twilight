@@ -1,6 +1,5 @@
 .container-header{
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -10,7 +9,8 @@
     align-items: center;
     justify-content: space-between;
     border: none;
-    border-bottom: 1px solid rgb(13, 100, 0);
+    z-index: 2;
+    border-bottom: 2px solid rgb(0, 71, 225);
 }
 
 .logo-title,
@@ -41,23 +41,14 @@ nav{
 
 @keyframes changeColor {
     0% {
-        color: rgb(34, 255, 0); /* Define a cor inicial */
+        color: aqua; /* Define a cor inicial */
     }
     100% {
-        color: rgb(0, 66, 13); /* Define a cor no meio da animação */
+        color: rgb(0, 15, 66); /* Define a cor no meio da animação */
     }
   }
-.logo-img{
-    background-color: transparent;
-    width: 2rem;
-    margin: 0;
-    filter: invert(100%);
-}
 
 @media only screen and (max-width: 800px) {
-    .logo-img{
-        width: 1.7rem;
-    }
     .nav{
         margin-left: 15rem;
         padding: 0 1rem;
@@ -80,7 +71,116 @@ nav{
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    left: 3rem;
+    left: 5rem;
     position:fixed;
 }
 
+.genders{
+    display: flex;
+    padding:0;
+    margin: 0 2.5rem 0 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.iconX{
+    margin-top: -1.4rem;
+    position: relative;
+    cursor: pointer;
+    z-index:5;
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.iconX i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.iconX .fa-bars {
+    opacity: 1;
+    transform: scale(1); /* Tamanho normal */
+}
+
+.iconX .fa-xmark {
+    opacity: 0;
+    transform: scale(0.5); /* Começa menor e invisível */
+}
+
+.iconX.active .fa-bars {
+    opacity: 0;
+    transform: scale(0.5); /* Fica menor e invisível */
+}
+
+.iconX.active .fa-xmark {
+    opacity: 1;
+    transform: scale(1); /* Fica no tamanho normal e visível */
+}
+
+.lis-container{
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(17, 17, 17);
+    align-items: stretch;
+    height: 100%;
+    position:fixed;
+    overflow-x: hidden;
+}
+
+.list-genders{
+    display: flex;
+    flex-direction: row;
+    background:none;
+    flex-wrap: wrap;
+    padding:3rem 3rem;
+}
+
+.list-genders ul{
+    text-decoration: none;
+    flex-direction: column;
+    list-style: none;
+}
+
+.list-genders ul a{
+    text-align:left;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: .8rem;
+    text-align:left;
+    color: #fff;
+    font-weight: 400;
+}
+
+.list-genders ul a:hover{
+    color:rgb(53, 53, 53);
+}
+
+.list-genders ul p{
+    margin-bottom: .8rem;
+    text-align:left;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 13px;
+}
+::-webkit-scrollbar-track {
+    background: #a1f9ff;
+    border-radius: 13px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 225, 225);
+    border-radius: 13px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 138, 138);
+}

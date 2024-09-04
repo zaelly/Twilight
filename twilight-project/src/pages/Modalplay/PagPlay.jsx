@@ -23,17 +23,35 @@ const PagPlay = () => {
   }, [id]);
 
   if (!video) return <p>Carregando...</p>;
+// se id vier como filme ele nao vai mostrar os btn para serie
+// se sim ele vai mostrar os btn para serie
+
+  function handleVideo(){
+    console.log("TESTE")
+  }
 
   return (
-   <div className="mainContainer">
+  <div className="mainContainer">
+    <div className="container-overInfo">
+      <div className="card-info">
+        <div className="text-info">
+          <h1 className="titlePag">{video.title}</h1>
+          <p className="textView">{video.overview}</p>
+          <button type="button" onClick={handleVideo}>Play</button>
+        </div>
+        <div className="card-post">
+          <img src={`https://image.tmdb.org/t/p/original/${video.poster_path}`} alt={video.title}></img>
+        </div>
+      </div> 
+    </div>
+
+    <div className="container-video">
       <video width="800" className="video" controls>
         <source src={`https://onmation.com/assistirOnline/${video.title}`} type="video/mp4"/>
+        <track kind="captions" src=""/*colocar link legenda*/></track>
       </video>
-      <div className="container-controller">
-        <h1 className="titlePag">{video.title}</h1>
-        <p className="textView">{video.overview}</p>
-      </div>
     </div>
+  </div>
   )
 }
 

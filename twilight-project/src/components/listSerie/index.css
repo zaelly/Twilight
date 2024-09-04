@@ -1,14 +1,4 @@
 
-.container-sr{ 
-    margin-left: 12%;
-    margin-top: 8rem;
-    width: 87%;
-    background: transparent;
-    color: #fff;
-    font-size: 2rem;
-    font-family: "Lalezar", system-ui;
-}
-
 li{
     position: relative;
     flex-direction: column;

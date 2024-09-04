@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import './index.css'
+import { Link } from "react-router-dom";
+import Footer from '/src/pages/footer/Footer';
 
 const ListSerie = () => {
 
@@ -26,16 +28,18 @@ const ListSerie = () => {
       }
 
   return (
-  <div className="container-sr">
-    <ul className='list'>
+  <div className="flex-container">
+    <div className='list'>
       {series.map((serie)=>
-        <li key={serie.id} className="flex-item">
-            <img className="card-poster" src={`https://image.tmdb.org/t/p/original/${serie.poster_path}`} alt={serie.title} />
-            <p className="card-title">{serie.title}</p>
-            <p className='description'>{serie.overview}</p>
-        </li>
+       <Link key={serie.id} to={`/onmation/assistirOnline/${serie.id}`}>
+        <div className="flex-item">
+          <img className="card-poster" src={`https://image.tmdb.org/t/p/original/${serie.poster_path}`} alt={serie.title} />         
+          <h2 className="card-title">{serie.title}</h2>
+        </div>
+        </Link>
       )}
-    </ul>
+    </div>
+    <Footer/>
   </div>
   )
 }

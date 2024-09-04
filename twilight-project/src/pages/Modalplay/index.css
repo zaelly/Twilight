@@ -1,8 +1,6 @@
 .mainContainer{
     margin: auto;
     padding: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
     height: 100vh;
     width: 100%;
     position: relative;
@@ -10,35 +8,64 @@
 
 .container-controller {
     border: 1px solid #fff;
-    width: 50%;
-    left: 55%;
+    width: 50.3%;
     flex-direction: column;
     height: 30%;
     position: relative;
-    bottom: 18rem;
+}
+
+.container-overInfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.text-info{
+    margin-top: 1.7rem;
+    width: 50%;
+    height: 30rem;
+    position: relative;
+    background-color: aqua;
+}
+.card-post img{
+    display: flex;
+    width: 50%;
+    height: 30rem;
+}
+
+.btnsContainer{
+    width: 100%;
+    padding: .5rem;
+    border-bottom: 1px solid #fff;
+    align-items: flex-start;
+    display: flex;
+}
+.btnsContainer button{
+    margin-right:.4rem;
+}
+
+.fa-solid{
+    background: transparent;
+    margin-right: .5rem;
 }
 
 .titlePag{
-    left: 55%;
     background: transparent;
-    color: hsl(0, 0%, 100%);
+    color: hwb(0 100% 0%);
     position: relative;
-    border-bottom: #fff solid 1px;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-family: "Lalezar", system-ui;    
 }
 
 .video{
-top:6rem;
-position: relative;
-left: 55%;
-background-color: aliceblue;
+    top:6rem;
+    position: relative;
+    background-color: aliceblue;
 }
 
 .textView{
-left: 55%;
-background: transparent;
-color: #fff;
-position: relative;
-font-family: "Lalezar", system-ui;    
+    background: transparent;
+    color: #fff;
+    position: relative;
+    font-size: .9rem;
+    font-family: "Lalezar", system-ui;    
 }

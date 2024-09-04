@@ -13,8 +13,8 @@
 
 .conteudo{ 
   top: 50%;
-  left: 55%;
-  transform: translate(-50%, 100%);
+  /* left: 55%;
+  transform: translate(-50%, 100%); */
   background: transparent;
   color: #fff;
   position: fixed;
@@ -24,13 +24,13 @@
 }
 
 .title-pagName{ 
-  top: 50%;
-  left: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  background: transparent;
-  color: #fff;
-  position: fixed;
-  top: 8rem;
+  background-color: transparent;
+  color: #ffff;
+  position: absolute !important;
+  z-index: 1;
+  top: 7rem;
   font-size: 2rem;
   font-family: "Lalezar", system-ui;    
 }
@@ -45,7 +45,7 @@
   color: #fff;
   display: flex;
   border: none;
-  border-top:1px solid rgb(13, 100, 0);
+  border-top:1px solid rgb(2, 0, 100);
   width: 100%;
   font-size: 2rem;
   font-family: "Lalezar", system-ui; 
@@ -60,7 +60,6 @@
 }
 
 :root{
-  overflow-x: hidden;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -70,28 +69,20 @@
 }
 
 .flex-item{
-  margin: 1rem;
-  gap: 1rem .5em;
-  width: 15rem;
+  gap: .3rem .1rem;
+  width: 10rem;
   flex-direction: column;
   flex-wrap: nowrap;
-  background-color: rgba(30, 255, 0, 0.158);
+  border-radius: 1rem;
 }
 
-.flex-item:hover, .card-poster:hover{
-  background-color: rgba(30, 255, 0, 0.438);
-}
-
-.card-poster{
-  width:100%;
-  padding: .5rem;
-  height: auto;
+.flex-item:hover{
+  background-color: rgba(17, 17, 17, 0.438);
 }
 
 .card-title{
   font-size: 1rem;
   color: #fff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .description{
@@ -108,17 +99,22 @@
   flex-flow: row wrap;
   display: flex;
   align-content: center;
-  margin-top:2rem
+  margin-top:2rem;
+  width: 100%;
+  cursor:pointer;
 }
 
-.title-pagName{ 
-  left: 55%;
-  transform: translate(-50%, -50%);
+.flex-container{ 
+  margin-left: 2%;
+  margin-top: 8rem;
+  width: 100%;
   background: transparent;
   color: #fff;
-  position: fixed;
-  border-bottom: #fff solid 1px;
-  top: 8rem;
   font-size: 2rem;
-  font-family: "Lalezar", system-ui;    
+  font-family: "Lalezar", system-ui;
+}
+
+.flex-item img,
+.flex-item p {
+  pointer-events: none; 
 }

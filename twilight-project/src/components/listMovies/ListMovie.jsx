@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './listMovie.css'
+import Footer from '/src/pages/footer/Footer';
 
 const ListMovie = () => {
     
@@ -25,20 +26,18 @@ const ListMovie = () => {
     });
   }
   return (
-    <div className="flex-container">
-    <ul className="list">
-      {movies.map((movie) => (
-        <li key={movie.id} className="flex-item">
-          <Link to={`/onmation/assistirOnline/${movie.id}`}>
-            <img className="card-poster" src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.title} />
-          </Link>
-          <Link to={`/onmation/assistirOnline/${movie.id}`}>
-            <p className="card-title">{movie.title}</p>
-          </Link>          
-          <p className="description">{movie.overview}</p>
-        </li>
+  <div className="flex-container">
+    <div className="list">
+      {movies.map((movie) => (  
+        <div key={movie.id}>
+          <Link to={`/onmation/assistirOnline/${movie.id}`} className="flex-item">
+              <img className="card-poster" src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.title} />
+              <h2 className="card-title">{movie.title}</h2>
+          </Link>    
+        </div>
       ))}
-    </ul>
+    </div>
+    <Footer/>
   </div>
   )
 }

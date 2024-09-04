@@ -6,8 +6,6 @@ import Serie from '/src/pages/series/Serie';
 import Animes from './pages/anime/Animes';
 import PagPlay from './pages/Modalplay/PagPlay'; 
 import { Routes, Route } from 'react-router-dom';
-import GendersViews from './components/gendersViews/GendersViews';
-import Footer from '/src/pages/footer/Footer';
 
 function App() {
   return (
@@ -21,8 +19,6 @@ function App() {
         <Route path="/onmation/assistirOnline/:id" element={<PagPlay />} />
         <Route path="/onmation/assistirOnline/:id" element={<PagPlay />} />
       </Routes>
-      <GendersViews />
-      <Footer />
     </div>
   );
 }

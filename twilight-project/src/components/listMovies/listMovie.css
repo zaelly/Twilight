@@ -1,18 +1,10 @@
 
-.flex-container{ 
-    margin-left: 12%;
-    margin-top: 8rem;
-    width: 87%;
-    background: transparent;
-    color: #fff;
-    font-size: 2rem;
-    font-family: "Lalezar", system-ui;
-}
-
-li{
+.flex-item{
     position: relative;
     flex-direction: column;
     flex: 1 1 15rem;
+    padding: .7rem;
+    background-color: none;
     flex-direction: column;
     list-style: none;
     display: flex;
