@@ -18,6 +18,7 @@ const PagPlay = () => {
       }
     }).then(response => {
       setVideo(response.data);
+      console.log(response.data)
     }).catch(error => {
       console.error("Erro ao buscar detalhes", error);
     });
@@ -28,7 +29,7 @@ const PagPlay = () => {
 // se sim ele vai mostrar os btn para serie
 
   function handleVideo(){
-    setDvideo(!dVideo)
+    setDvideo(true)
   }
 
   return (
@@ -53,7 +54,7 @@ const PagPlay = () => {
           </div>
           <div className="moreInfo">
             {/* {`iconX ${bars ? 'active' : ''}` */}
-            <button type="button" onClick={handleVideo} className={`container-video ${dVideo ? 'dFleX' : 'dFleY'}`}><i className="fa-solid fa-play"></i>Assista agora</button>
+            <button type="button" onClick={handleVideo}><i className="fa-solid fa-play"></i>Assista agora</button>
             <span className="moreInfoSpan"><a href="http://maisDetalhes">Mais Detalhes</a></span>
           </div>
         </div>
@@ -67,6 +68,7 @@ const PagPlay = () => {
         </video>
       </div> 
     )}
+    
   </div>
   )
 }
