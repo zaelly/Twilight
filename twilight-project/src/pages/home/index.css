@@ -1,0 +1,15 @@
+.card-poster{
+    width:100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+  
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card-poster:hover{
+    background-color: rgba(17, 17, 17, 0.438);
+  }

@@ -1,0 +1,46 @@
+.mainContainer{
+    margin: auto;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+.carousel{
+  left: 100%;
+  transform: translate(-50%, -15%);
+  background-color: transparent;
+  color: #ffff;
+  position: relative !important;
+  z-index: 1;
+  top:5rem;
+  font-size: 2rem;
+  font-family: "Lalezar", system-ui;    
+}
+
+@media only screen and (max-width: 1366px) {
+.carouselDp{
+    top:4rem;
+    left: 85%;
+  }
+  .carousel-inner img{
+    width: 25rem;
+    height: 20rem;
+}
+
+.carousel{
+    width: 40rem;
+    height: 20rem;
+}
+}
+
+.carousel{
+    width: 49rem;
+    height: 30rem;
+}
+
+.carousel-inner img{
+    width: 35rem;
+    height: 30rem;
+}

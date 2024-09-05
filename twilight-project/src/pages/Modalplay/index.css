@@ -16,20 +16,77 @@
 
 .container-overInfo{
     display: flex;
+    margin-top:5rem;
+}
+
+.card-info{
+    display: flex;
     flex-direction: row;
+    margin:0 1rem;
+    width: 50rem;
+    z-index: 1;
+}
+
+.moreInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.moreInfoSpan{
+    margin: .4rem 0;
+    padding: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.moreInfoSpan a{
+    color: aqua;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.details{
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.destaque{
+    font-weight: 400;
+    color:aqua;
+}
+
+.details p{
+    margin-bottom: 1px;
+    text-align: left;
+    d
 }
 
 .text-info{
-    margin-top: 1.7rem;
-    width: 50%;
-    height: 30rem;
+    align-items: center;
+    margin-top: 1.6rem;
+    width: 65%;
+    height: 95%;
     position: relative;
-    background-color: aqua;
+    z-index: 2;
+}
+
+.card-post{
+    width: 30%;
+    padding-right: 1rem;
 }
 .card-post img{
     display: flex;
-    width: 50%;
-    height: 30rem;
+    width: 100%;
+    height: 20rem;
+    margin-top: 1.6rem;
 }
 
 .btnsContainer{
@@ -50,9 +107,11 @@
 
 .titlePag{
     background: transparent;
-    color: hwb(0 100% 0%);
+    color: aqua;
     position: relative;
     font-size: 1.3rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
     font-family: "Lalezar", system-ui;    
 }
 
@@ -62,10 +121,18 @@
     background-color: aliceblue;
 }
 
+.dFleX{
+    display: none;
+}
+
+.dFleY{
+    display: block;
+}
+
 .textView{
     background: transparent;
     color: #fff;
     position: relative;
-    font-size: .9rem;
+    font-size: .95rem;
     font-family: "Lalezar", system-ui;    
 }

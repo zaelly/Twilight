@@ -23,6 +23,7 @@ nav h1{
     font-weight: bold;
     font-family: "Anta", sans-serif;
     display: flex;
+    text-decoration: none;
 }
 
 .logo-color-change{
@@ -149,6 +150,7 @@ nav{
 .list-genders ul a{
     text-align:left;
     font-size: 1.1rem;
+    text-decoration: none;
     margin: 0;
     padding: 0;
     margin-bottom: .8rem;
@@ -158,11 +160,13 @@ nav{
 }
 
 .list-genders ul a:hover{
+    text-decoration: none;
     color:rgb(53, 53, 53);
 }
 
 .list-genders ul p{
     margin-bottom: .8rem;
+    text-decoration: none;
     text-align:left;
     color: #fff;
     font-weight: 600;

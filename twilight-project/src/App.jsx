@@ -6,6 +6,9 @@ import Serie from '/src/pages/series/Serie';
 import Animes from './pages/anime/Animes';
 import PagPlay from './pages/Modalplay/PagPlay'; 
 import { Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 
 function App() {
   return (
