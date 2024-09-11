@@ -1,0 +1,32 @@
+.container-search{
+    width: 20%;
+    font-size: 10px;
+    color: #fff;
+    max-height: 20rem;
+    overflow: auto;
+    position: absolute;
+    border: 1px solid rgb(37, 37, 37);
+}
+.container-search ul{
+    border-bottom: 2px solid #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.container-list {
+    color: #fff;
+    text-align: left;
+    flex: 0;
+    margin: 0;
+    word-break: break-word;
+    padding: 5px 1rem;
+    text-decoration: none;
+    border-bottom: 2px solid #111111;
+}
+.container-list:hover {
+    background-color: #333;
+}

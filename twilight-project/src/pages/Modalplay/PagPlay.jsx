@@ -28,6 +28,10 @@ const PagPlay = () => {
 // se id vier como filme ele nao vai mostrar os btn para serie
 // se sim ele vai mostrar os btn para serie
 
+//colocar mais de um player
+//colocar video ao lado do aba de detalhes
+//colocar sessão de comentarios tbm
+
   function handleVideo(){
     setDvideo(true)
   }

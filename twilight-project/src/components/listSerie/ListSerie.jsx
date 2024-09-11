@@ -31,7 +31,7 @@ const ListSerie = () => {
   <div className="flex-container">
     <div className='list'>
       {series.map((serie)=>
-       <Link key={serie.id} to={`/onmation/assistirOnline/${serie.id}`}>
+       <Link className="listT" key={serie.id} to={`/onmation/assistirOnline/${serie.id}`}>
         <div className="flex-item">
           <img className="card-poster" src={`https://image.tmdb.org/t/p/original/${serie.poster_path}`} alt={serie.title} />         
           <h2 className="card-title">{serie.title}</h2>
