@@ -14,15 +14,19 @@
   color: #ffff;
   position: relative !important;
   z-index: 1;
-  top:5rem;
+  top:11rem;
   font-size: 2rem;
   font-family: "Lalezar", system-ui;    
 }
 
+.carousel-indicators{
+    background-color: transparent;
+}
+
 @media only screen and (max-width: 1366px) {
 .carouselDp{
-    top:4rem;
-    left: 85%;
+    top: 11rem;
+    left: 88%;
   }
   .carousel-inner img{
     width: 25rem;
@@ -31,7 +35,6 @@
 
 .carousel{
     width: 40rem;
-    height: 20rem;
 }
 }
 
