@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from 'axios';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import './index.css'
 
 const PagPlay = () => {
   const { id } = useParams();
   const [video, setVideo] = useState(null);
-  const [dVideo, setDvideo] = useState(false)
+  const [show, setShow] = useState(false);
+
 
   useEffect(() => {
     axios({
@@ -32,10 +35,6 @@ const PagPlay = () => {
 //colocar video ao lado do aba de detalhes
 //colocar sessão de comentarios tbm
 
-  function handleVideo(){
-    setDvideo(true)
-  }
-
   return (
   <div className="mainContainer">
     <div className="container-overInfo">
@@ -58,21 +57,31 @@ const PagPlay = () => {
           </div>
           <div className="moreInfo">
             {/* {`iconX ${bars ? 'active' : ''}` */}
-            <button type="button" onClick={handleVideo}><i className="fa-solid fa-play"></i>Assista agora</button>
+            <Button variant="primary" onClick={() => setShow(true)}>
+              <i className="fa-solid fa-play"></i>Assista agora
+            </Button>
             <span className="moreInfoSpan"><a href="http://maisDetalhes">Mais Detalhes</a></span>
           </div>
         </div>
       </div> 
     </div>
-    {dVideo && (
-      <div className="container-video" id="videoContainer">
-        <video width="800" className="video" controls>
-          <source src={`https://onmation.com/assistirOnline/${video.title}`} type="video/mp4"/>
-          <track kind="captions" src=""/*colocar link legenda*/></track>
-        </video>
-      </div> 
-    )}
-    
+    <div className="modal-content">
+      <Modal
+        className="container-modal"
+        show={show}
+        onHide={() => setShow(false)}
+        aria-labelledby={`video-${video.id}`}
+      >
+        <Modal.Body>
+          <div className="container-video" id="videoContainer">
+            <video width="800" className="video" controls>
+              <source src={`https://onmation.com/assistirOnline/${video.title}`} type="video/mp4"/>
+              <track kind="captions" src=""/*colocar link legenda*/></track>
+            </video>
+          </div> 
+        </Modal.Body>
+      </Modal>
+    </div>
   </div>
   )
 }

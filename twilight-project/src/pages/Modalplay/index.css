@@ -66,7 +66,43 @@
 .details p{
     margin-bottom: 1px;
     text-align: left;
-    d
+}
+
+@media (max-width:1366px) {
+    .container-video{
+        right: 15rem;
+    }
+}
+
+.container-video{
+    position: relative;
+    display: flex;
+    width: 200%;
+    right: 13rem;
+}
+
+.container-modal{
+    border: none !important;
+    color: #fff;
+    background-color: #00ccff0c;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font: 600;
+}
+.modal-content{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.modal-dialog{
+    top: 3rem;
+    background-color: transparent;
+}
+
+.modal-body{
+    background-color: transparent;
+    border: none !important;
 }
 
 .text-info{
@@ -116,9 +152,9 @@
 }
 
 .video{
-    top:6rem;
     position: relative;
     background-color: aliceblue;
+    width: 200%;
 }
 
 .dFleX{
