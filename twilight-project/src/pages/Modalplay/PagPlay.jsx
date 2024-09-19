@@ -4,6 +4,7 @@ import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './index.css'
+import Coments from "../../components/coments/Coments";
 
 const PagPlay = () => {
   const { id } = useParams();
@@ -82,6 +83,7 @@ const PagPlay = () => {
         </Modal.Body>
       </Modal>
     </div>
+    <Coments/>
   </div>
   )
 }
