@@ -1,0 +1,12 @@
+
+.flex-item{
+    position: relative;
+    flex-direction: column;
+    flex: 1 1 15rem;
+    padding: .7rem;
+    background-color: none;
+    flex-direction: column;
+    list-style: none;
+    display: flex;
+    font-size: 1rem;
+}

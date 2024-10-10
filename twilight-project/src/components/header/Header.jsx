@@ -25,12 +25,12 @@ const Header = () => {
                 Filmes
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/serie/1" className="underline">
                 <span className='icon-span'><i className="fa-solid fa-video"></i></span>
                 Séries
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/animes/1" className="underline">
                 <span className='icon-span'><i className="fa-solid fa-ghost"></i></span>

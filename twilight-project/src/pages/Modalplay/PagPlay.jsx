@@ -1,32 +1,32 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './index.css'
+import { getVideoMovie } from '../../data/data';
+import { getAnimesVideo } from '../../data/data';
 import Coments from "../../components/coments/Coments";
 
 const PagPlay = () => {
-  const { id } = useParams();
+  const { mal_id, id } = useParams();
   const [video, setVideo] = useState(null);
   const [show, setShow] = useState(false);
 
-
   useEffect(() => {
-    axios({
-      method: 'GET',
-      url: `https://api.themoviedb.org/3/movie/${id}`,
-      params: {
-        api_key: '0deeb6dcd8b4bb61358ded8785516851',
-        language: 'pt-BR'
+  const fetchMovie = async () => {
+      let movieResponse = null;
+      let animeResponse = null; 
+
+      if(id){
+        movieResponse = await getVideoMovie(id);
+      } if (mal_id) {
+        animeResponse = await getAnimesVideo(mal_id);
       }
-    }).then(response => {
-      setVideo(response.data);
-      console.log(response.data)
-    }).catch(error => {
-      console.error("Erro ao buscar detalhes", error);
-    });
-  }, [id]);
+      
+     setVideo(movieResponse || animeResponse);
+  }
+  fetchMovie()
+  }, [id, mal_id]);
 
   if (!video) return <p>Carregando...</p>;
 // se id vier como filme ele nao vai mostrar os btn para serie
@@ -83,7 +83,7 @@ const PagPlay = () => {
         </Modal.Body>
       </Modal>
     </div>
-    <Coments/>
+    {/* <Coments/> */}
   </div>
   )
 }

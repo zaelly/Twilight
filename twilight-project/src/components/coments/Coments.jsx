@@ -1,11 +1,26 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import './index.css'
+// import axios from "axios";
 
 const Coments = () => {
 
     const [coments, setComents] = useState("");
     const [comentsList, setComentsList] = useState([]);
     const [expandedIndex, setExpandedIndex] = useState(null);
+    // const [data, setData] = useState([]);
+
+    // const fetchData = async () =>{
+    //     try{
+    //         const response = await axios.get('https://jsonplaceholder.typicode.com/comments');
+    //         setData(response.data);
+    //     }catch(error){
+    //         console.error(error);
+    //     }
+    // }
+
+    // useEffect(()=>{
+    //     fetchData();
+    // }, []);
 
     function handleEnter(event) {
         if(event.key === 'Enter'){
@@ -78,6 +93,7 @@ const Coments = () => {
                             ) : (
                                 <p>Sem comentários</p>
                             )}
+                            {/* deixar comentarios salvos em algum banco de dados */}
                     </div>
                 </div>
             </div>
