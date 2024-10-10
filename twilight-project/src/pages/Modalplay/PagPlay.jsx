@@ -5,7 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import './index.css'
 import { getVideoMovie } from '../../data/data';
 import { getAnimesVideo } from '../../data/data';
-import Coments from "../../components/coments/Coments";
+//import Coments from "../../components/coments/Coments";
 
 const PagPlay = () => {
   const { mal_id, id } = useParams();
