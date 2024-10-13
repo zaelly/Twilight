@@ -15,38 +15,38 @@ const Home = () => {
       {/* <Carosel/> */}
       </div>
       <Container>
-        <Row className='Row'>
-          <h2 className='titlePrin'>Populares</h2>
-            <h3 className='titlePop'>Animes</h3>
-            <div className='caards'>
-              <Card style={{ width: '7rem', height: '9rem', background:"white"}}>
-                <Card.Body style={{ background:"none" }}>
-                </Card.Body>
-              </Card>
-              <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
-                <Card.Body style={{ background:"none" }}>
-                </Card.Body>
-              </Card>
-              <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
-                <Card.Body style={{ background:"none" }}>
-                </Card.Body>
-              </Card>
-              <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
-                <Card.Body style={{ background:"none" }}>
-                </Card.Body>
-              </Card>
-              <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
-                <Card.Body style={{ background:"none" }}>
-                </Card.Body>
-              </Card>              <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
-                <Card.Body style={{ background:"none" }}>
-                </Card.Body>
-              </Card>
-            </div>
+        <h2 className='titlePrin'>Populares</h2>
+        <Row className='Row'  style={{ display: "block"}}>
+          <h3 className='titlePop'>Animes</h3>
+          <div className='caards' style={{ marginTop: ".7rem"}}>
+            <Card style={{ width: '7rem', height: '9rem', background:"white"}}>
+              <Card.Body style={{ background:"none" }}>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
+              <Card.Body style={{ background:"none" }}>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
+              <Card.Body style={{ background:"none" }}>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
+              <Card.Body style={{ background:"none" }}>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
+              <Card.Body style={{ background:"none" }}>
+              </Card.Body>
+            </Card>              <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
+              <Card.Body style={{ background:"none" }}>
+              </Card.Body>
+            </Card>
+          </div>
         </Row>  
         <Row className='Row'>
             <h3 className='titlePop'>Filmes</h3>
-            <div className='caards'>
+            <div className='caards' style={{ marginTop: ".7rem"}}>
               <Card style={{ width: '7rem', height: '9rem', background:"white"}}>
                 <Card.Body style={{ background:"none" }}>
                 </Card.Body>
@@ -73,6 +73,8 @@ const Home = () => {
             </div>
         </Row>
       </Container>
+
+      {/* fazer um loop com os cards e fazer com que qnd o mouse arrastar pros lados os cards vao rodando como slide */}
     </div>
   );
 };
