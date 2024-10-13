@@ -11,8 +11,23 @@
     justify-content: space-between;
     border: none;
     z-index: 2;
-    border-bottom: 2px solid rgb(0, 71, 225);
+    animation: changeColorBorder 2s infinite alternate;
 }
+
+@keyframes changeColorBorder {
+    0% {
+        border-bottom:2px solid rgb(0, 71, 225); /* Define a cor inicial */
+    }
+    50% {
+        border-bottom:2px solid rgb(0, 47, 255); /* Define a cor no meio da animação */
+    }
+    75% {
+        border-bottom:2px solid rgb(68, 0, 255); /* Define a cor no meio da animação */
+    }
+    100% {
+        border-bottom:2px solid rgb(53, 2, 148); /* Define a cor no meio da animação */
+    }
+  }
 
 .logo-title,
 nav h1{
@@ -51,10 +66,16 @@ nav{
 
 @keyframes changeColor {
     0% {
-        color: aqua; /* Define a cor inicial */
+        color:rgb(0, 71, 225); /* Define a cor inicial */
+    }
+    50% {
+        color:rgb(0, 47, 255); /* Define a cor no meio da animação */
+    }
+    75% {
+        color:rgb(68, 0, 255); /* Define a cor no meio da animação */
     }
     100% {
-        color: rgb(0, 15, 66); /* Define a cor no meio da animação */
+        color:rgb(53, 2, 148); /* Define a cor no meio da animação */
     }
   }
 

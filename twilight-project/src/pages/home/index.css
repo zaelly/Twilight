@@ -4,12 +4,46 @@
     border-radius: 1rem;
   }
   
-.mainContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
 .card-poster:hover{
     background-color: rgba(17, 17, 17, 0.438);
+}
+
+.Row{
+  margin-bottom: 1rem;
+}
+
+.titlePrin{
+  color: #fff;
+  padding: .7rem;
+}
+
+.titlePop{
+  padding: .2rem;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: justify;
+  animation: changeColorTitle 2s infinite alternate;
+  border-radius: 5px;
+}
+
+@keyframes changeColorTitle {
+  0% {
+      background-color: rgb(0, 71, 225); /* Define a cor inicial */
   }
+  50% {
+    background-color: rgb(0, 47, 255); /* Define a cor no meio da animação */
+  }
+  75% {
+    background-color: rgb(68, 0, 255); /* Define a cor no meio da animação */
+  }
+  100% {
+    background-color: rgb(53, 2, 148); /* Define a cor no meio da animação */
+  }
+}
+
+.caards{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
