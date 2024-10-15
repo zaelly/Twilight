@@ -5,6 +5,7 @@ import Movies from '/src/pages/films/Movies';
 import Serie from '/src/pages/series/Serie';
 import Animes from './pages/anime/Animes';
 import PagPlay from './pages/Modalplay/PagPlay'; 
+import PagPlayAnime from './pages/Modalplay/PagPlayAnime'; 
 import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -20,7 +21,7 @@ function App() {
         <Route path="/serie/:id" element={<Serie />} />
         <Route path="/animes/:id" element={<Animes />} />
         <Route path="/onmation/assistirOnline/:id" element={<PagPlay />} />
-        <Route path="/onmation/animes/:mal_id" element={<PagPlay />} />
+        <Route path="/onmation/animes/:mal_id" element={<PagPlayAnime />} />
       </Routes>
     </div>
   );

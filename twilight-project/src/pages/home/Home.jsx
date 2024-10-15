@@ -38,15 +38,28 @@ const Home = () => {
             <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
               <Card.Body style={{ background:"none" }}>
               </Card.Body>
-            </Card>              <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
+            </Card>              
+            <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
               <Card.Body style={{ background:"none" }}>
               </Card.Body>
             </Card>
+            <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
+              <Card.Body style={{ background:"none" }}>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
+                <Card.Body style={{ background:"none" }}>
+                </Card.Body>
+              </Card>   
           </div>
         </Row>  
         <Row className='Row'>
             <h3 className='titlePop'>Filmes</h3>
             <div className='caards' style={{ marginTop: ".7rem"}}>
+              <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
+                <Card.Body style={{ background:"none" }}>
+                </Card.Body>
+              </Card>
               <Card style={{ width: '7rem', height: '9rem', background:"white"}}>
                 <Card.Body style={{ background:"none" }}>
                 </Card.Body>
@@ -66,10 +79,15 @@ const Home = () => {
               <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
                 <Card.Body style={{ background:"none" }}>
                 </Card.Body>
-              </Card>              <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
+              </Card>              
+              <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
                 <Card.Body style={{ background:"none" }}>
                 </Card.Body>
               </Card>
+              <Card style={{ width: '7rem', height: '9rem', background:"white" }}>
+                <Card.Body style={{ background:"none" }}>
+                </Card.Body>
+              </Card>   
             </div>
         </Row>
       </Container>
